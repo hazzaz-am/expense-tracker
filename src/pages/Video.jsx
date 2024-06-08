@@ -17,7 +17,6 @@ const Video = () => {
 	const { link, title, id, description, tags, date } = video;
 
 	useEffect(() => {
-
 		dispatch(fetchSingleVideo(videoId));
 	}, [dispatch, videoId]);
 
@@ -40,9 +39,9 @@ const Video = () => {
 			<div className="grid grid-cols-3 gap-2 lg:gap-8">
 				<div className="col-span-full w-full space-y-8 lg:col-span-2">
 					<VideoPlayer link={link} title={title} />
-					<VideoDescription desc={description} date={date} title={title}/>
+					<VideoDescription desc={description} date={date} title={title} />
 				</div>
-				<RelatedVideosList id={id} tags={tags} />
+				<RelatedVideosList currentVideoId={id} tags={tags} />
 			</div>
 		);
 	}
