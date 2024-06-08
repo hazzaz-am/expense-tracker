@@ -1,4 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
+import filterReducer from "../features/filter/filterSlice";
 import relatedVideosReducer from "../features/relatedVideos/relatedVideosSlice";
 import singleVideoReducer from "../features/singleVideo/singleVideoSlice";
 import tagsReducer from "../features/tags/tagsSlice";
@@ -10,5 +11,6 @@ export const store = configureStore({
 		tags: tagsReducer,
 		video: singleVideoReducer,
 		relatedVideos: relatedVideosReducer,
+		filter: filterReducer,
 	},
 });
