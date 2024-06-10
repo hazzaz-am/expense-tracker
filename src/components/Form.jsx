@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import {
 	addNewTransaction,
 	changeTransaction,
+	editInActive,
 	fetchTransactions,
 } from "../features/transaction/transactionSlice";
 
@@ -52,8 +53,9 @@ const Form = () => {
 	};
 
 	const handleCancelBtn = () => {
-		setEditMode(false);
 		resetInputs();
+		setEditMode(false);
+		dispatch(editInActive());
 	};
 
 	const submitUpdateTransaction = (e) => {

@@ -1,28 +1,10 @@
 {
   "transactions": [
     {
-      "name": "Salary from facebook",
+      "name": "from google",
       "type": "income",
-      "amount": "5000000",
+      "amount": 23542354,
       "id": 1
-    },
-    {
-      "name": "Family Expenses",
-      "type": "expense",
-      "amount": "80000",
-      "id": 2
-    },
-    {
-      "name": "Salary from flight project",
-      "type": "income",
-      "amount": 2000,
-      "id": 3
-    },
-    {
-      "name": "shafiun Bin Siraj",
-      "type": "income",
-      "amount": "10000",
-      "id": 4
     }
   ]
 }
